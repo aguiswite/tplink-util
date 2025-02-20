@@ -1,4 +1,4 @@
-# TP-LINK POE Switch RESTful API (TPLink-Util)
+# TP-LINK POE Switch RESTful API
 
 ----
 
