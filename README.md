@@ -25,9 +25,9 @@ differently in the docker run command, the API is exposed on port 8750.
 | URL/Path                                                                     | Method | Description                                                                                                               |
 |------------------------------------------------------------------------------|-------------|---------------------------------------------------------------------------------------------------------------------------|
 | <_hostname_>:<_port_>/api/v1/poe/{portNumber}/{powerState}                   | PUT         | Toggles a single port state by specifying the port number and state value (0=off, 1=on)                                   |
-| <_hostname_>/api/v1/poe/range/{startPortNumber}/{endPortNumber}/{powerState} | PUT         | Toggles a port state by range. Provide the start and end port numbers in the range along with a state value (0=off, 1=on) |
-| <_hostname_>/api/v1/poe/{portNumber}                                         | GET         | Retrieve port information for a single port number                                                                        |
-| <_hostname_>/api/v1/poe/range/{startPortNumber}/{endPortNumber}              | GET         | Retrieves port information for a range of port numbers                                                                    |
+| <_hostname_>:<_port_>/api/v1/poe/range/{startPortNumber}/{endPortNumber}/{powerState} | PUT         | Toggles a port state by range. Provide the start and end port numbers in the range along with a state value (0=off, 1=on) |
+| <_hostname_>:<_port_>/api/v1/poe/{portNumber}                                         | GET         | Retrieve port information for a single port number                                                                        |
+| <_hostname_>:<_port_>/api/v1/poe/range/{startPortNumber}/{endPortNumber}              | GET         | Retrieves port information for a range of port numbers                                                                    |
 
 ### Example
 #### http://tplink-util-server:8750/api/v1/poe/1
